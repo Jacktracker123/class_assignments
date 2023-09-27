@@ -3,6 +3,10 @@
     padding: 0;
 }
 
-div {
+#box-1{
     background-color: blue;
+}
+p{
+    color: white;
+    font-size: 20px;
 }
