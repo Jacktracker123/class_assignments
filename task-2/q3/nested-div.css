@@ -1,0 +1,7 @@
+ #outer p {
+     font-size: 25px;
+ }
+ 
+ #inner p {
+     font-size: 10px;
+ }
