@@ -20,12 +20,28 @@ body {
 .logo {
     color: orange;
     font-size: 25px;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .links {
     color: white;
     text-decoration: none;
+}
+
+.links1 {
+    margin-left: 200px;
+}
+
+.links2 {
+    margin-left: 200px;
+}
+
+li {
+    display: inline-block;
+}
+
+ol {
+    position: relative;
 }
 
 .btn {
