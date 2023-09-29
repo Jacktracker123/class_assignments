@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: url(bg1.jpg) no-repeat;
+    height: 50vh;
+    width: 50vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
