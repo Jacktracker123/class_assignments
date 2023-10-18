@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 360px 360px 360px 360px;
+    grid-template-rows: 50px 1080px 240px;
+    gap: 20px;
+    width: 100%;
+    height: 80%;
+}
+
+.box {}
+
+.boxs img {
+    width: 360px;
+}
+
+.header {
+    background-color: black;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.video {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: aqua;
+}
+
+.box3 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+
+.box4 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+.box5 {
+    grid-row-start: 3;
+    grid-column-start: 3;
+}
+
+.box6 {
+    grid-row-start: 3;
+    grid-column-start: 4;
+}
+
+@media screen and (width < 786px) {
+    .container {
+        width: 786px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .header {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .video {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .box3 {
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+    .box4 {
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+    .box5 {
+        grid-row-start: 4;
+        grid-column-start: 1;
+    }
+    .box6 {
+        grid-row-start: 4;
+        grid-column-start: 2;
+    }
+}
+
+@media screen and (width < 460px) {
+    .container {
+        width: 460px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    .header {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    .video {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    .box3 {
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+    .box4 {
+        grid-row-start: 4;
+        grid-column-start: 1;
+    }
+    .box5 {
+        grid-row-start: 5;
+        grid-column-start: 1;
+    }
+    .box6 {
+        grid-row-start: 6;
+        grid-column-start: 1;
+    }
+}
